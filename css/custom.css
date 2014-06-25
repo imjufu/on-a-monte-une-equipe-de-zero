@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "FrancoisOne";
+    src: url("../lib/font/FrancoisOne.ttf") format("truetype");
+}
+
+.reveal {
+    font-family: "FrancoisOne", sans-serif;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    font-family: "FrancoisOne", sans-serif;
+    letter-spacing: 0.02em;
+    line-height: 1em;
+    text-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    text-transform: none;
+}
+
+.reveal .slides>section, .reveal .slides>section>section {
+    border-radius: 50px;
+}
+
+.reveal section p {
+    font-size: 1.5em;
+}
+/*
+.reveal .slide-background {
+    background-size: contain;
+}*/
+
+#first-slide h1 {
+    color: black;
+    font-size: 3em;
+}
+
+.more-visible {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#team {
+    position: absolute;
+    top: 0.5em;
+    left: -20px;
+    text-align: right;
+    padding: 0.4em 0.4em 0.4em 0.6em;
+    font-size: 1.4em;
+    border-left: 0;
+    z-index: 999;
+    font-family: 'Quicksand', 'FrancoisOne', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.hidden {
+    display: none;
+}

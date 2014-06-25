@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>On a monté une équipe de zéro</title>
+
+        <meta name="description" content="Conférence donnée au PHP Tour 2014">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/night.css" id="theme">
+        <link rel="stylesheet" href="css/custom.css">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <script src="lib/js/jquery.min.js" type="text/javascript"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section data-background="#FFF" id="first-slide">
+                    <img src="images/tea.png">
+                    <h1>On a monté une équipe de zéro</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        Vendre en 15sec : on est passé de 0 à une petite dizaine de devs
+                    </aside>
+                </section>
+
+                <section data-background="./images/once_upon_a_time.jpg" class="more-visible">
+                    <h1>Il était une fois…</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        Histoire d’une start-up TEA, The Ebook Alternative (Juillet 2011).
+                        TEA : permettre aux libraires de vendre du numérique (matériel et livres)
+                        3 co-fondateurs qui ont une idée et ont besoin d’une équipe technique.
+                        Raconter comment l’équipe a grandi au fur et a mesure du temps (voir indicateurs en haut)
+                        <p class="team-details">+ 0 mois<br/>0 dev</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/we-want-you.png" class="more-visible">
+                    <h1>Phase de recrutement</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        Éric Daspet (Directeur Technique) qui s’est occupé des phases de recrutement.
+                        Pas son métier à la base. Très chronophage.
+                        Profil : Assez curieux, autonome, veille quotidienne sur des technos web, administrations systèmes, architecture, … Mouton à 5 pattes !
+                        Ça prend du temps du coup les bases de code sont développés par des prestataires.
+                        L’idée donc c’est d’avoir 5 devs en 1 an.
+                        <p class="team-details">+ 1 mois<br/>0 dev</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/anne-sophie.jpg" class="more-visible">
+                    <h1>Hello Anne-So</h1>
+                    <p>@annso_</p>
+                    <p>#photo #ebook #poledance</p>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        CV pas très long (3 mois d’XP). Bonne veille et participation à des projets OS et des évènements comme Paris Web.
+                        Peu d'XP mais pas important.
+                        Profil très novice. “Mes 3 collègues sont mes 3 chefs.”
+                        Recrutement via une annonce twitter après un Paris Web
+                        <p class="team-details">+ 6 mois<br/>1 dev</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/seul-au-monde.jpg" class="more-visible">
+                    <h1>Seule au monde</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        Les chefs avaient beaucoup de déplacement à faire. Souvent seule dans les locaux.
+                        Mission : reprendre le code développer en externe.
+                        “Si jamais tu es bloqué, n’hésite pas à demander de l’aide à tes collègues !”
+                        <p class="team-details">+ 6 mois<br/>1 dev</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/julien.jpg" class="more-visible">
+                    <h1>Hello Julien</h1>
+                    <p>@PKoin / koin.github.io</p>
+                    <p>#MarioKart8 #montagne #pasDeFootPitié</p>
+                    <aside class="notes">
+                        Speaker : Julien
+                        Rencontre avec Éric pendant un apéro PHP.
+                        Profil plus expérimenté qu’Anne-So (6 ans d’XP) : PHP en SSII
+                        Entretien informel : échange sur la veille
+                        <p class="team-details">+ 7 mois<br/>2 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/sprint.jpg" class="more-visible">
+                    <h1>Premier sprint</h1>
+                    <aside class="notes">
+                        Speaker : Julien
+                        Chez TEA, on est en agile (méthodo scrum)
+                        Sprint d’une semaine : jeune équipe
+                        => on ne sait pas encore comment travailler ensemble
+                        => ça permet de faire des points régulièrement (rassurant)
+                        <p class="team-details">+ 7 mois<br/>2 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/serveur.jpg" class="more-visible">
+                    <h1>Premier serveur</h1>
+                    <aside class="notes">
+                        Speaker : Julien
+                        Travail à 2 = nécessité d’un serveur commun
+                        Déballage du carton, choix de la distrib, choix de l’env de virtualisation...
+                        Choses qu’on avait déjà fait chez nous, mais pas au sein d’une entreprise
+                        <p class="team-details">+ 7 mois<br/>2 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/no-idea-dog.jpg" class="more-visible">
+                    <h1>Premier projet</h1>
+                    <aside class="notes">
+                        Speaker : Julien
+                        Beaucoup de questions :
+                        - quelles technos (plutôt PHP) ?
+                        - quel framework (sf1.4, sf2, silex ?)
+                        - quel ORM ?
+                        Choix pas évident car on va se les trainer sur des années
+                        <p class="team-details">+ 7 mois<br/>2 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/mikael_randy.jpg" class="more-visible">
+                    <h1>Hello Mikael</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        - A travaillé et étudié avec Julien
+                        - Profil assez similaire
+                        - Dynamique de travail différente à 2 ou à 3 personnes
+                        - Transfert de connaissance, prendre du temps pour : justifier, expliquer.
+                        - Pas assez de documentation
+                        - Critiques = difficile à entendre
+                        <p class="team-details">+ 10 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/decitre-confluence.jpg" class="more-visible">
+                    <h1>Première mise en prod</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        - Arrivée de Mik + MEP !
+                        - Pré-prod : ambiance de travail zen
+                        - Post-prod : plein de problèmes pas anticipé, pas d’env iso prod (versions, librairies, pas la même organisation des services…)
+                        - Durée : 4 jours à 2 sur un sprint de 5 jours, mep assez chaotique
+                        - Deadline : ouverture de confluence à Lyon
+                        <p class="team-details">+ 10 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/pompier.jpg" class="more-visible">
+                    <h1>Mode pompier</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        - 50 % de notre temps pour répondre à l’urgence
+                        - très compliqué de prendre le temps de gérer des solutions long terme
+                        - Intégration de Mik
+                        <p class="team-details">+ 10 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/astreinte.jpg" class="more-visible">
+                    <h1>Première astreinte</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        - Queques outils qui envoient des mails : trop brut, pas assez qualifié
+                        - Retour au travail un samedi soir alors que le problème était très mineur
+                        - “Coup de pied au cul”
+                        <p class="team-details">+ 10 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/grumpy-cat.jpg" class="more-visible">
+                    <h1>&ldquo;Faudra vraiment finir ça&rdquo;</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        - Anecdote du PO qui arrive devant le board avec une réflexion que l’équipe a trouvé très déplacé
+                        - Beaucoup de points de blocage, de dépendances ext., … Sprint pas fini !
+                        - Problème de confiance entre l'équipe technique et fonctionnel
+                        <p class="team-details">+ 10 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/buddy-jesus.jpg" class="more-visible">
+                    <h1>Le changement, c'est maintenant !</h1>
+                    <aside class="notes">
+                        Speaker : Julien
+                        Pour ne pas aller droit dans le mur, il faut changer des choses
+                        Les solutions doivent venir de l’équipe tech
+                        Plusieurs étapes, ça a mis plusieurs mois
+                        <p class="team-details">+ 11 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/marathon.jpg" class="more-visible">
+                    <h1>Allongement des sprints</h1>
+                    <aside class="notes">
+                        Speaker : Julien
+                        Passage de sprints de 1 semaine à 2 semaines
+                        ça permet pas l’imprévu, ni les travaux plus conséquents;
+                        réunion de fins de sprints trop fréquentes (démo, rétro…) (qui peuvent être longue)
+                        <p class="team-details">+ 11 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/giphy.gif" class="more-visible">
+                    <h1>&ldquo; Et si on répétait nos MEP ?&rdquo;</h1>
+                    <aside class="notes">
+                        Speaker : Julien
+                        On passait par les environnements dev, preprod, prod mais comme ils n’étaient pas iso :
+                        perte de temps et dangereux
+                        => remise à plat des serveurs de devs et de la preprod pour être a l’image de la prod
+                        <p class="team-details">+ 11 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/peluche.png" class="more-visible">
+                    <h1>&ldquo;Qui c'est qui a la peluche ?&rdquo;</h1>
+                    <aside class="notes">
+                        Speaker : Julien
+                        Peluche = marque qui est “dérangeable”
+                        Gestion des perturbations extérieures
+                        avant, on était 3 à écouter le pb, essayer de le gérer…
+                        Maintenant, c’est une seule personne
+                        Elle tourne, en bonne intelligence
+                        <p class="team-details">+ 11 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/wall-e.jpg" class="more-visible">
+                    <h1>Déploiement continu</h1>
+                    <aside class="notes">
+                        Speaker : Julien
+                        Choix de l’outil capistrano
+                        Attention : on a trop voulu faire dès le début, et finalement ça n’avançait pas
+                        1er essai : 2 semaines pour créer une machine et y faire tourner le code applicatif => échec
+                        Plus tard, 2ème essai : simplement déployer le code applicatif => capistrano
+                        On aurait du le faire dès le debut (on le fait maintenant toujours sur les nouveaux projets)
+                        Retour sur investissement super
+                        Amélioration continue : le mettre en place chaque fois qu’on touche à un projet
+                        Ex : chez nous, 15 projets => 1 an pour tout migrer
+                        <p class="team-details">+ 12 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/loki.png" class="more-visible">
+                    <h1>Premier sprint fini</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        - Rappel des actions : envs iso avec la prod, mieux gérer les interruptions et les déploiement
+                        - C’était une vraie victoire, très gratifiant
+                        <p class="team-details">+ 12 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/wtf.jpg" data-background-size="contain" class="more-visible">
+                    <h1>La désillusion</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        - On faisait plus attention à améliorer notre productivité et du coup on faisait moins attention à la qualité du code
+                        - On codait dans notre coin sans rien montrer aux autres
+                        <p class="team-details">+ 13 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/github.jpg" class="more-visible">
+                    <h1>Passage sous Github</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        - Repo git locaux sans interface simple
+                        - Interface pratique, PR, issue
+                        - Revue de code
+                        - Outil payant (50$ / mois) compliqué à expliquer comme besoin à des fonctionnels (véritable bras de fer).
+                        <p class="team-details">+ 14 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/code-review.jpg" class="more-visible">
+                    <h1>Revues de code</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        - Pas formel mais en faire tout le temps
+                        - Code revue via physique, PR, mail, …
+                        - Échanges très intéressants et indispensables
+                        - La productivité court terme à baissé (code de mauvaise qualité plus rapide à taper) mais investissement long terme ! Remise en cause des chiffrements
+                        <p class="team-details">+ 14 mois<br/>3 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/yves.jpg" class="more-visible">
+                    <h1>Hello Yves</h1>
+                    <aside class="notes">
+                        Speaker : Julien
+                        Objectifs de recrutement initiaux pas du tout atteints (on devait être 5 au bout de 12 mois)
+                        Profil senior, habitué aux méthodes agiles
+                        => regard critique sur nos méthodes et proposition d’améliorations immédiates
+                        <p class="team-details">+ 14 mois<br/>4 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/doctor-who.gif" class="more-visible">
+                    <h1>Bye bye<br />Mikael & Yves</h1>
+                    <aside class="notes">
+                        Speaker : Julien
+                        TEA ne correspondait pas à leurs attentes
+                        Ne pas retenir les gens contre leur volonté, ça serait bête et contre-productif
+                        Baisse de la productivité mais ce n'est pas grave, on a su s'adapter, pas vraiment le choix
+                        ça fait parti de la vie d'une équipe
+                        <p class="team-details">+ 20 mois<br/>2 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/teletubbies.jpg" class="more-visible">
+                    <h1>Hello Agnès, Pascal, Olivier, Guillaume…</h1>
+                    <aside class="notes">
+                        Speaker : Anne-So
+                        Équipe plus grosse : 6
+                        Change beaucoup les méthodes de travails
+                        HipChat
+                        Points techniques pour croiser l'information
+                        Remise en cause de nos réunions (pas besoin de voir tout le monde)
+                        <p class="team-details">+ 25 mois<br/>6 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/my-brain-is-full-of.jpg" class="more-visible">
+                    <h1>&ldquo; Tu va voir, en 2 semaines c'est bouclé ! &rdquo;</h1>
+                    <aside class="notes">
+                        Speaker : Julien
+                        Arrivées très proches qui nous ont permis de nous concentrer sur nos envs de dev
+                        Mise en place de projet intéressant : provisionnement vagrant, docker
+                        <p class="team-details">+ 30 mois<br/>6 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/florie.png" data-background-size="contain" class="more-visible">
+                    <h1>Hello Florie</h1>
+                    <aside class="notes">
+                    Speaker : Anne-So
+                    Personne dédiée pour l'exploitation : jusque là, une personne à temps plein, le but est de passer à 1/2 temps plein
+                        <p class="team-details">+ 35 mois<br/>7 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="./images/chemistry-cat.jpg" data-background-size="contain" class="more-visible">
+                    <h1>Spécialisation</h1>
+                    <aside class="notes">
+                    Speaker : Anne-So
+                    Arrivée de Florie => première spécialisation ds l'équipe
+                    Jusque là, tout le monde faisait tout.
+                    D'ailleurs, recrutement d'une personne dédiée JS cet été
+                        <p class="team-details">+ 35 mois<br/>7 devs</p>
+                    </aside>
+                </section>
+
+
+                <section data-background="./images/today.jpg" class="more-visible">
+                    <h1>Aujourd'hui</h1>
+                    <aside class="notes">
+                        Speaker : Julien
+                        On s'est concentré sur les tests et le déploiement
+                        On fait des tests mais pas encore de PIC
+                        <p class="team-details">+ 35 mois<br/>7 devs</p>
+                    </aside>
+                </section>
+
+                <section data-background="#007777">
+                    <h1>Merci !</h1>
+                    <h2>Questions ?</h2>
+                    <p>&nbsp;</p>
+                    <p>Anne-So / @annso_</p>
+                    <p>Julien / @PKoin / koin.github.io</p>
+                    <aside class="notes">
+                        Speaker : Anne-So et Julien
+                    </aside>
+                </section>
+
+            </div>
+
+            <div id="team" class="team-details hidden"></div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+            Reveal.addEventListener('slidechanged', function (event) {
+                elm = $('aside.notes .team-details', event.currentSlide)
+                if (elm.length > 0) {
+                    console.log(elm);
+                    $('#team').html(elm.html());
+                    $('#team').removeClass("hidden");
+                }
+                else {
+                    $('#team').html("");
+                    $('#team').addClass("hidden");
+                }
+            });
+
+
+        </script>
+
+    </body>
+</html>
